@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DarkTube</title>
+    <img class="logo" src="thinkful projects/youtube-challenge/images/darktube-logo/" height="193px" width="350px">
+    <link rel="stylesheets" href="css/stylesheets.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+<header class="heading-section">
+    <h1>DarkTube</h1>
+</header>
+
+<body>
+
+    <div class="dropdown">
+        <button class="dropbtn">Icon</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <li>
+                Home
+            </li>
+            <li>
+                Trending
+            </li>
+            <li>
+                Subscriptions
+            </li>
+            <li>
+                History
+            </li>
+            <li>
+                Watch Later
+            </li>
+            <a href="#">Link 2</a>
+            <li>
+                Library
+            </li>
+            <li>
+                Browse Channel
+            </li>
+            <a href="#">Link 3</a>
+            <li>
+                Manage Subscriptions
+            </li>
+            <li>
+                DarkTube Red
+            </li>
+        </div>
+    </div>
+
+    <form id="search-form">
+        <div>
+            <input type="text" value="" name="search" id="search" />
+            <input type="submit" id="searchsubmit" value="Search" />
+        </div>
+    </form>
+    <p>
+        <INPUT TYPE=SUBMIT>
+        <INPUT TYPE=RESET>
+    </p>
+
+    <div id="search-results">
+        <ul></ul>
+        <p class="error"></p>
+    </div>
+    <div id="footer-container" class="yt-base-gutter force-layer">
+        <div id="footer">
+            <div id="footer-main">
+                <div id="footer-logo">
+                    <a href="/" id="footer-log-link" title="YouTube Home" data-sessionlink="???" class="yt-uix-sessionlink"> <span class="footer-logo-icon yt-sprite"></span> </a>
+                </div>
+                <ul class="pickers yt-uix-button-group" data-button-toggle-group="optional">
+                    <li>
+                        <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon" type="button" onclick=";return false;" id="yt-picker-language-button" data-button-menu-id="arrow-display" data-picker-key="language" data-button-action="yt.www.picker.load" data-picker-position="footer" data-button-toggle="true"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-footer-language yt-sprite"></span></span><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+        Language:
+        </span> English
+                            </span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+                    </li>
+                    <li>
+                        <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default" type="button" onclick=";return false;" id="yt-picker-country-button" data-button-menu-id="arrow-display" data-picker-key="country" data-button-action="yt.www.picker.load" data-picker-position="footer" data-button-toggle="true"><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+                            Country:
+                            </span> Worldwide
+                            </span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+                    </li>
+                    <li>
+                        <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default" type="button" onclick=";return false;" id="yt-picker-safetymode-button" data-button-menu-id="arrow-display" data-picker-key="safetymode" data-button-action="yt.www.picker.load" data-picker-position="footer" data-button-toggle="true"><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+                            Restricted Mode:
+                            </span> Off
+                            </span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+                    </li>
+                </ul>
+                <a href="/feed/history" class="yt-uix-button  footer-history yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon" data-sessionlink="ei=VYkeV8WiCYqq-wWVjJHIDA"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-footer-history yt-sprite"></span></span><span class="yt-uix-button-content">History</span></a>
+                <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon yt-uix-button-reverse yt-google-help-link inq-no-click " type="button" onclick=";return false;" data-ghelp-anchor="google-help" id="google-help" data-ghelp-tracking-param="" data-feedback-product-id="59" data-load-chat-support=""><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-questionmark yt-sprite"></span></span><span class="yt-uix-button-content">Help
+                </span></button>
+                <div id="yt-picker-language-footer" class="yt-picker" style="display: none">
+                    <p class="yt-spinner ">
+                        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+                        <span class="yt-spinner-message">
+                            Loading...
+                        </span>
+                    </p>
+
+                </div>
+
+                <div id="yt-picker-safetymode-footer" class="yt-picker" style="display: none">
+                    <p class="yt-spinner ">
+                        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+                        <span class="yt-spinner-message">
+                            Loading...
+                        </span>
+                    </p>
+
+                </div>
+                </ul>
+            </div>
+        </div>
+        <div id="footer-links">
+            <ul id="footer-links-primary">
+                <li>
+                    <a href="//www.youtube.com/yt/about/">About</a>
+                </li>
+                <li>
+                    <a href="//www.youtube.com/yt/press/">Press</a>
+                </li>
+                <li>
+                    <a href="//www.youtube.com/yt/copyright/">Copyright</a>
+                </li>
+                <li>
+                    <a href="//www.youtube.com/yt/creators/">Creators</a>
+                </li>
+                <li>
+                    <a href="//www.youtube.com/yt/advertise/">Advertise</a>
+                </li>
+                <li>
+                    <a href="//www.youtube.com/yt/dev/">Developers</a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/+youtube" dir="ltr">+YouTube</a>
+                </li>
+            </ul>
+            <ul id="footer-links-secondary">
+                <li>
+                    <a href="/t/terms">Terms</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/intl/en/policies/privacy/">Privacy</a>
+                </li>
+                <li>
+                    <a href="//www.youtube.com/yt/policyandsafety/">Policy & Safety</a>
+                </li>
+                <li>
+                    <a href="//support.google.com/youtube/?hl=en" onclick="return yt.www.feedback.start(59);" class="reportbug">Send feedback</a>
+                </li>
+                <li>
+                    <a href="/testtube">Try something new!</a>
+                </li>
+                <li>
+                    <span class="copyright" dir="ltr">© 2016 YouTube, LLC</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
