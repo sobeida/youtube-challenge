@@ -1,36 +1,41 @@
     body {
         text-align: center;
+        font-family: arial;
     }
 
     .heading-section {
         text-align: center;
         width: 100%;
+        margin-top: 3px;
     }
 
     #search-results ul {
         overflow: hidden;
         margin-top: 1em;
-        text-align: center;
+        text-align: left;
     }
 
     #search-results li {
         float: left;
         width: 30%;
         margin-bottom: 2em;
+        margin-left: 2px;
+        margin-right: 3px;
         padding: 1%;
         border: 1px solid #434343;
-        border-bottom-width: 3px;
+        border-bottom-width: 1px;
     }
 
     #search-results li img {
         display: block;
-        max-width: 100%;
+        max-width: 50%;
     }
 
     #search-results li p {
         padding-bottom: 1em;
-        margin-bottom: 1em;
+        /*margin-bottom: 1em;
         border-bottom: 1px solid #434343;
+        position: relative; */
     }
 
     ol,
