@@ -5,29 +5,35 @@
     <meta charset="UTF-8">
     <title>DarkTube</title>
     <link rel="stylesheet" href="css/stylesheets.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="js/app.js"></script>
 
 </head>
 
 <body>
+    <div class="container">
+        <header class="heading-section">
+            <a href="#refresh"><img class="logo" src="images/darktube-logo.png"></a>
 
-    <header class="heading-section">
-        <h1>DarkTube</h1>
-        <img class="logo" src="images/darktube-logo.png">
+        </header>
+        <br>
 
-    </header>
-
-    <form id="search-form">
-        <input id="query" type="text" placeholder="Enter search words..." />
-        <div>
+        <form id="search-form">
+            <input id="query" type="search" placeholder="Enter search words..." />
             <input class="myButton" type="submit" value="Search" id="submit" />
-        </div>
-    </form>
+        </form>
+        <br>
 
-    <div id="search-results">
-        <ul></ul>
-        <p class="error"></p>
+
+        <hr>
+        <br>
+
+
+        <div id="search-results">
+            <ul></ul>
+            <p class="error"></p>
+        </div>
     </div>
 </body>
 
