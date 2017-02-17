@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>DarkTube</title>
     <link rel="stylesheet" href="css/stylesheets.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="js/app.js"></script>
@@ -12,19 +13,18 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="container">
         <header class="heading-section">
             <a href="#refresh"><img class="logo" src="images/darktube-logo.png"></a>
-
+            <h1>Search Your Darkest Videos Here</h1>
         </header>
         <br>
 
         <form id="search-form">
-            <input id="query" type="search" placeholder="Enter search words..." />
-            <input class="myButton" type="submit" value="Search" id="submit" />
+            <input id="query" type="search" placeholder="Enter search words...">
+            <input class="submitButton" type="submit" value="Search" />
         </form>
         <br>
-
 
         <hr>
         <br>
