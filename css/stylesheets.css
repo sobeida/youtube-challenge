@@ -17,7 +17,7 @@
     }
 
     #container img {
-        margin: 2rem auto;
+        margin: 3rem auto;
         width: 99%;
         max-width: 300px;
         max-height: 200px;
@@ -42,6 +42,7 @@
         padding: 0.5rem;
         margin-right: 1rem;
         border-radius: 0.5rem;
+        background-color: #D3D3D3;
     }
 
     #search-form #query:focus {
@@ -94,5 +95,4 @@
 
     #search-results li img {
         margin: 1rem;
-        max-width: 70%;
     }
